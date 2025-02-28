@@ -103,7 +103,7 @@ This **MOSFET driver module** is designed for **high-power switching application
 
 ![Antu](https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/Connection%20Diagram%20of%20Motor%20Drive.jpg)
 
-*Figure 1: F28379D LaunchPad with Potentiometer*
+*Figure 2: Connection Diagram of Motor Drive*
 
 #### **Working Principle**  
 - The module features a **dual-MOS parallel active output**, reducing internal resistance and increasing current capacity.  
@@ -126,7 +126,7 @@ The **relay module** acts as an **electrical switch**, enabling **low-power micr
 
 ![Antu] (https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/2c113b5bf998a07804dd37c7147d5f3d46d2c142/Photos/Relay.webp)
 
-*Figure 1: F28379D LaunchPad with Potentiometer*
+*Figure 3: Realy Module*
 
 #### **Working Principle**  
 - When triggered, the relay **closes or opens** its circuit, allowing for control of **AC or DC loads**.  
@@ -151,7 +151,7 @@ This **RGB LED module** allows for **color mixing** using **Pulse Width Modulati
 
 ![Antu](https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/LED.jpg)
 
-*Figure 1: F28379D LaunchPad with Potentiometer*
+*Figure 4: LED Module*
 
 #### **Working Principle**  
 - The module includes a **5mm RGB LED** and **three 150Ω resistors** to prevent burnout.  
@@ -172,7 +172,7 @@ This **active buzzer module** generates an audible alarm or tone when activated.
 ![Antu]
 (https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/01edb99be91021602d311cc6899b1725f07a95b0/Photos/Buzzer.jpeg)
 
-*Figure 1: F28379D LaunchPad with Potentiometer*
+*Figure 5: Buzzer Module*
 
 #### **Working Principle**  
 - Unlike a **passive buzzer**, an **active buzzer** emits sound **as soon as it receives power**.  
@@ -224,7 +224,7 @@ The implementation of DC motor control using the **TMS320F28379D** microcontroll
 
 ![Antu](https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/Motor%20is%20Rotating%20at%20normal%20Speed%20Only%20Relay%20Module%20and%20LED%20On.jpg)
 
-*Figure 1: F28379D LaunchPad with Potentiometer*
+*Figure 6: Motor is Rotating at Normal Speed*
 
 #### **Working Principle**  
 2. **LED and Buzzer Indication**
@@ -233,7 +233,7 @@ The implementation of DC motor control using the **TMS320F28379D** microcontroll
 
 ![Antu](https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/Motor%20is%20Rotating%20at%20Full%20Speed%20LED%20and%20Buzzer%20On.jpg)
 
-*Figure 1: F28379D LaunchPad with Potentiometer*
+*Figure 7: Motor is Rotating at Full Speed*
 
 #### **Working Principle**  
 - **Figure 1:** When the motor is running at a **normal speed**, only the **relay module LED is ON**.
