@@ -96,6 +96,10 @@ This **10K Ohm potentiometer** is a crucial component in **PWM-based motor speed
 ### **2. 5-36V Switch Drive High-Power MOSFET Trigger Module**  
 This **MOSFET driver module** is designed for **high-power switching applications**. It enables efficient **PWM control of motors, light bulbs, LEDs, solenoid valves, and more**.  
 
+
+![Antusdddddddddddddddd](https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/2b16567f4e88e164c2485ad860fb8435e7360a20/Photos/F28379D%20LaunchPad%20with%20Potentiometer.png)
+
+
 #### **Working Principle**  
 - The module features a **dual-MOS parallel active output**, reducing internal resistance and increasing current capacity.  
 - It supports **PWM input**, allowing for **motor speed control** and **lamp brightness adjustments**.  
@@ -134,6 +138,9 @@ The **relay module** acts as an **electrical switch**, enabling **low-power micr
 
 ### **4. DIP 3-Color LED Module**  
 This **RGB LED module** allows for **color mixing** using **Pulse Width Modulation (PWM)**.  
+
+![Antusdddddddddddddddd](https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/2b16567f4e88e164c2485ad860fb8435e7360a20/Photos/F28379D%20LaunchPad%20with%20Potentiometer.png)
+
 
 #### **Working Principle**  
 - The module includes a **5mm RGB LED** and **three 150Ω resistors** to prevent burnout.  
@@ -188,16 +195,6 @@ This **active buzzer module** generates an audible alarm or tone when activated.
 - **Interrupt Handling:** Ensures efficient processing of signals.  
 
 ---
-
-## **Conclusion**  
-This project demonstrates a **TMS320F28379D-based open-loop speed control system** for a **DC motor**, using **PWM signals** regulated by a **potentiometer**. Additional **components such as relays, LEDs, and buzzers** enhance the functionality, making it a **versatile and practical embedded system application**.  
-
-This **modular design** allows for **further expansion**, including **closed-loop feedback control**, **wireless communication**, or **sensor integration** for advanced applications.  
-
-🚀 **Future Enhancements**:  
-- Implement **PID-based closed-loop control** for improved motor speed regulation.  
-- Add **real-time monitoring using UART or CAN communication**.  
-- Integrate **temperature and current sensors** for **safety features**.  
 
 # Results
 
