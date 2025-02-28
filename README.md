@@ -212,12 +212,11 @@ The implementation of DC motor control using the **TMS320F28379D** microcontroll
    - During **normal operation**, only the **relay module LED** remains **on**.
    - If the motor speed exceeds a predefined limit, **both the LED and buzzer turn on** as a warning indicator.
 
+![Antu](https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/Motor%20is%20Rotating%20at%20Full%20Speed%20LED%20and%20Buzzer%20On.jpg)
+
 #### **Working Principle**  
-### Figures:
 - **Figure 1:** When the motor is running at a **normal speed**, only the **relay module LED is ON**.
 - **Figure 2:** When the motor is running at **full speed**, both the **LED and buzzer are ON**.
-
-![Antu](https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/Motor%20is%20Rotating%20at%20Full%20Speed%20LED%20and%20Buzzer%20On.jpg)
 
 # Conclusion and Future Considerations
 
