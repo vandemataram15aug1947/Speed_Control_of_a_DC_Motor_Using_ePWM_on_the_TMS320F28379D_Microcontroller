@@ -21,7 +21,7 @@ This project implements **closed-loop speed control** of a **DC motor** using **
 
 ## GPIO Connection Table
 
-| S. No | GPIO Pin   | Launchpad Pin | Component  |
+| SL. No | GPIO Pin   | Launchpad Pin | Name of the Component  |
 |------|------------|--------------|------------|
 | 1    | ADCINA0    | Pin 30       | Potentiometer |
 | 2    | GPIO0      | EPWM1A (Pin 40) | Oscilloscope |
@@ -29,7 +29,7 @@ This project implements **closed-loop speed control** of a **DC motor** using **
 
 ## Connecting the Potentiometer
 
-Follow these steps to correctly connect the potentiometer to the **TMS320**:
+Follow these steps to correctly connect the potentiometer to the **TMS320F28379D**:
 
 1. Connect the **negative pin** of the potentiometer to **GND PIN** on the TMS320.
 2. Connect the **signal pin** of the potentiometer to **ADCINA0** on the TMS320.
