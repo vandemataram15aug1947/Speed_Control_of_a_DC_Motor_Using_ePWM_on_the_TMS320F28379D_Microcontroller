@@ -62,6 +62,8 @@ The potentiometer can be used in two primary configurations:
 
 This setup is useful for applications such as analog signal control, sensor calibration, and user input interfaces.
 
+---
+
 ## Hardware Used  
 
 ### **10K Ohm 3-Pin 15mm Shaft Potentiometer**  
@@ -88,28 +90,6 @@ The **10K Ohm 3-Pin 15mm Shaft Potentiometer** is a versatile component widely u
 - **Weight:** 6g  
 
 This **10K Ohm potentiometer** is a crucial component in **PWM-based motor speed control**, providing smooth and precise **user input for speed regulation**. It is widely used in applications such as **dimmer controls, fan speed adjustments, and signal calibration circuits**.  
-
-## **Hardware Components**  
-
-### **1. 10K Ohm 3-Pin 15mm Shaft Potentiometer**  
-The **10K Ohm 3-Pin Potentiometer** is used to regulate the **PWM duty cycle**, thus controlling the motor speed. It functions as a **variable resistor** or **voltage divider**, feeding an **analog voltage** to the **ADC** of the **TMS320F28379D**.  
-
-#### **Working Principle**  
-- Rotating the potentiometer **changes its resistance**, altering the voltage read by the ADC.  
-- The **microcontroller processes this voltage** and adjusts the **PWM duty cycle** accordingly.  
-- This provides **manual speed control**, making the system **intuitive and user-friendly**.  
-
-#### **Specifications**  
-- **Resistance:** 10kΩ  
-- **Tolerance:** ±20%  
-- **Temperature Coefficient:** ±100ppm/℃  
-- **Operating Temperature Range:** -40°C to 80°C  
-- **Mounting Type:** Through-Hole  
-- **Dimensions:**  
-  - Length: 20mm  
-  - Width: 17mm (Body Diameter)  
-  - Height: 24mm  
-- **Weight:** 6g  
 
 ---
 
