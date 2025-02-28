@@ -218,6 +218,8 @@ The implementation of DC motor control using the **TMS320F28379D** microcontroll
 - **Figure 1:** When the motor is running at a **normal speed**, only the **relay module LED is ON**.
 - **Figure 2:** When the motor is running at **full speed**, both the **LED and buzzer are ON**.
 
+---
+
 # Conclusion and Future Considerations
 
 The **PWM-based DC motor control system** implemented in this project provides a solid foundation for further development in motor control applications. The project effectively demonstrates how **PWM duty cycle modulation** can be used to control a **DC motor’s speed**, utilizing an **ADC input from a potentiometer**.
