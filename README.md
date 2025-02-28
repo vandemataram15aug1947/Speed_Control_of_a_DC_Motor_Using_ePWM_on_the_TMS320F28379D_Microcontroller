@@ -36,6 +36,9 @@ Follow these steps to correctly connect the potentiometer to the **TMS320F28379D
 2. Connect the **Signal Pin** of the potentiometer to **ADCINA0** on the TMS320.
 3. Connect the **Positive Pin** of the potentiometer to **5V PIN** on the TMS320.
 
+
+![Antu](https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/785af9094180a0ee1756ddc7f9bbf9edfda6044f/Photos/Connection%20Diagram%20of%20Motor%20Drive.jpg)
+
 ## About the Potentiometer
 
 A **potentiometer** is a three-terminal electrical and electronic component that can change its resistance by rotating or statically moving. It is commonly used for voltage division or as a variable resistor.
