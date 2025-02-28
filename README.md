@@ -37,7 +37,7 @@ Follow these steps to correctly connect the potentiometer to the **TMS320F28379D
 3. Connect the **Positive Pin** of the potentiometer to **5V PIN** on the TMS320.
 
 
-![Antu](https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/785af9094180a0ee1756ddc7f9bbf9edfda6044f/Photos/Connection%20Diagram%20of%20Motor%20Drive.jpg)
+![Antu](https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/2b16567f4e88e164c2485ad860fb8435e7360a20/Photos/F28379D%20LaunchPad%20with%20Potentiometer.png)
 
 ## About the Potentiometer
 
