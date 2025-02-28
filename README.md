@@ -124,8 +124,9 @@ This **MOSFET driver module** is designed for **high-power switching application
 The **relay module** acts as an **electrical switch**, enabling **low-power microcontroller signals** to control **high-power loads**.  
 
 
-https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/2c113b5bf998a07804dd37c7147d5f3d46d2c142/Photos/Relay.webp
+![Antu] (https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/2c113b5bf998a07804dd37c7147d5f3d46d2c142/Photos/Relay.webp)
 
+*Figure 1: F28379D LaunchPad with Potentiometer*
 
 #### **Working Principle**  
 - When triggered, the relay **closes or opens** its circuit, allowing for control of **AC or DC loads**.  
@@ -167,6 +168,11 @@ This **RGB LED module** allows for **color mixing** using **Pulse Width Modulati
 
 ### **5. 5V Active Alarm Buzzer Module**  
 This **active buzzer module** generates an audible alarm or tone when activated.  
+
+![Antu]
+(https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/01edb99be91021602d311cc6899b1725f07a95b0/Photos/Buzzer.jpeg)
+
+*Figure 1: F28379D LaunchPad with Potentiometer*
 
 #### **Working Principle**  
 - Unlike a **passive buzzer**, an **active buzzer** emits sound **as soon as it receives power**.  
