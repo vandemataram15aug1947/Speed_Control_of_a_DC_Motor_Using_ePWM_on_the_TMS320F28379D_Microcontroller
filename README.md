@@ -31,9 +31,9 @@ This project implements **closed-loop speed control** of a **DC motor** using **
 
 Follow these steps to correctly connect the potentiometer to the **TMS320F28379D**:
 
-1. Connect the **negative pin** of the potentiometer to **GND PIN** on the TMS320.
-2. Connect the **signal pin** of the potentiometer to **ADCINA0** on the TMS320.
-3. Connect the **positive pin** of the potentiometer to **5V PIN** on the TMS320.
+1. Connect the **Negative Pin** of the potentiometer to **GND PIN** on the TMS320.
+2. Connect the **Signal Pin** of the potentiometer to **ADCINA0** on the TMS320.
+3. Connect the **Positive Pin** of the potentiometer to **5V PIN** on the TMS320.
 
 ## About the Potentiometer
 
