@@ -170,8 +170,7 @@ This **RGB LED module** allows for **color mixing** using **Pulse Width Modulati
 ### **5. 5V Active Alarm Buzzer Module**  
 This **active buzzer module** generates an audible alarm or tone when activated.  
 
-![Antu]
-(https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/01edb99be91021602d311cc6899b1725f07a95b0/Photos/Buzzer.jpeg)
+![Antu](https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/Motor%20is%20Rotating%20at%20normal%20Speed%20Only%20Relay%20Module%20and%20LED%20On.jpg)
 
 *Figure 5: Buzzer Module*
 
