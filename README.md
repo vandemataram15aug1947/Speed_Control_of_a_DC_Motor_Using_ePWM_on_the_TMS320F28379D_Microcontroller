@@ -36,12 +36,24 @@ Follow these steps to correctly connect the potentiometer to the **TMS320F28379D
 2. Connect the **Signal Pin** of the potentiometer to **ADCINA0** on the TMS320.
 3. Connect the **Positive Pin** of the potentiometer to **5V PIN** on the TMS320.
 
+## About the Potentiometer  
 
-![Antu](https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/2b16567f4e88e164c2485ad860fb8435e7360a20/Photos/F28379D%20LaunchPad%20with%20Potentiometer.png)
+The **potentiometer** is used to adjust the **PWM duty cycle** through the **TMS320F28379D's Analog-to-Digital Converter (ADC)**, thereby directly controlling the **motor speed**. As the potentiometer's position changes, the ADC reads the corresponding voltage, which is then used to modify the PWM signal and regulate the motor speed dynamically.  
 
-## About the Potentiometer
+### How It Works  
+- Rotating the **potentiometer** increases or decreases the ADC value.  
+- A **higher ADC value** results in a **lower duty cycle**, causing the motor to **slow down or stop**.  
+- A **lower ADC value** increases the duty cycle, allowing the motor to **run at full speed**.  
+- The motor speed is continuously adjusted based on the potentiometer’s position.  
 
-A **potentiometer** is a three-terminal electrical and electronic component that can change its resistance by rotating or statically moving. It is commonly used for voltage division or as a variable resistor.
+### Potentiometer Overview  
+A **potentiometer** is a **three-terminal electrical component** that can change its **resistance** either by rotating or through linear motion. It is commonly used in circuits for **voltage division** or as a **variable resistor**.  
+
+Below is the circuit diagram illustrating how the **potentiometer is connected to the TMS320F28379D** for motor speed control:  
+
+![Antusdddddddddddddddd](https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/2b16567f4e88e164c2485ad860fb8435e7360a20/Photos/F28379D%20LaunchPad%20with%20Potentiometer.png)
+
+This setup ensures smooth and precise **DC motor speed control**, making it a fundamental part of this project. 🚀  
 
 ### Configuration Modes
 The potentiometer can be used in two primary configurations:
