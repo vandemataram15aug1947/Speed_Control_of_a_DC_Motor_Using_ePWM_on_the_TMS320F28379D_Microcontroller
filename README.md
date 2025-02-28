@@ -19,6 +19,8 @@ This project implements **closed-loop speed control** of a **DC motor** using **
 
 # GPIO Connections and Potentiometer Setup
 
+https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/main/Photos/Connection%20Diagram%20of%20Motor%20Drive.jpg
+
 ## GPIO Connection Table
 
 | SL. No | GPIO Pin   | Launchpad Pin | Name of the Component  |
