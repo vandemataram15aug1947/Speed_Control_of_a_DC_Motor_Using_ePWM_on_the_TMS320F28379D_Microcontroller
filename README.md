@@ -53,6 +53,12 @@ Below is the circuit diagram illustrating how the **potentiometer is connected t
 
 ![Antu](https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/2b16567f4e88e164c2485ad860fb8435e7360a20/Photos/F28379D%20LaunchPad%20with%20Potentiometer.png)
 
+![Alt Text](path-to-image.png)
+
+*Figure 1: F28379D LaunchPad with Potentiometer*
+
+
+
 This setup ensures smooth and precise **DC motor speed control**, making it a fundamental part of this project. 🚀  
 
 ### Configuration Modes
