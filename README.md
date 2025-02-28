@@ -123,6 +123,10 @@ This **MOSFET driver module** is designed for **high-power switching application
 ### **3. 5V 1-Channel Relay Module (Without Light Coupling)**  
 The **relay module** acts as an **electrical switch**, enabling **low-power microcontroller signals** to control **high-power loads**.  
 
+
+https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/2c113b5bf998a07804dd37c7147d5f3d46d2c142/Photos/Relay.webp
+
+
 #### **Working Principle**  
 - When triggered, the relay **closes or opens** its circuit, allowing for control of **AC or DC loads**.  
 - It features a **fault-tolerant design**, ensuring stability even if the control line is disconnected.  
