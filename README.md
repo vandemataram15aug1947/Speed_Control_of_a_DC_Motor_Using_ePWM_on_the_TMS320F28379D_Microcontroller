@@ -22,38 +22,32 @@ This project implements **closed-loop speed control** of a **DC motor** using **
 - **Code Composer Studio (CCS)**
 - **C2000Ware (for TMS320F28379D support)**
 
-### **3. Code Implementation**
-Below is the **main loop** for controlling the motor speed using **PWM and PID**:
+# GPIO Connections and Potentiometer Setup
 
-```c
-#include "F28x_Project.h"
+## GPIO Connection Table
 
-// PID Controller Variables
-float Kp = 1.0, Ki = 0.1, Kd = 0.01;
-float setpoint = 1000.0;  // Desired speed in RPM
-float error, prev_error = 0, integral = 0, derivative, duty_cycle;
+| S. No | GPIO Pin   | Launchpad Pin | Component  |
+|------|------------|--------------|------------|
+| 1    | ADCINA0    | Pin 30       | Potentiometer |
+| 2    | GPIO0      | EPWM1A (Pin 40) | Oscilloscope |
+| 3    | GPIO0      | Connected to Relay | Motor |
 
-// Function to Read Motor Speed (Example)
-float ReadSpeed(void) {
-    return 900.0;  // Replace with actual encoder reading
-}
+## Connecting the Potentiometer
 
-// PID Control Algorithm
-void UpdatePID(void) {
-    float measured_speed = ReadSpeed();
-    error = setpoint - measured_speed;
-    integral += error;
-    derivative = error - prev_error;
+Follow these steps to correctly connect the potentiometer to the **TMS320**:
 
-    // Compute control signal
-    duty_cycle = (Kp * error) + (Ki * integral) + (Kd * derivative);
+1. Connect the **negative pin** of the potentiometer to **GND PIN** on the TMS320.
+2. Connect the **signal pin** of the potentiometer to **ADCINA0** on the TMS320.
+3. Connect the **positive pin** of the potentiometer to **5V PIN** on the TMS320.
 
-    // Limit duty cycle between 0 and 1000
-    if (duty_cycle > 1000) duty_cycle = 1000;
-    if (duty_cycle < 0) duty_cycle = 0;
+## About the Potentiometer
 
-    // Update PWM duty cycle
-    EPwm1Regs.CMPA.bit.CMPA = duty_cycle;
+A **potentiometer** is a three-terminal electrical and electronic component that can change its resistance by rotating or statically moving. It is commonly used for voltage division or as a variable resistor.
 
-    prev_error = error;  // Store previous error
-}
+### Configuration Modes
+The potentiometer can be used in two primary configurations:
+1. **Voltage Control Mode:** The potentiometer acts as a voltage divider, providing an adjustable voltage output.
+2. **Resistance Control Mode:** The potentiometer alters its resistance dynamically, depending on the rotation or movement.
+
+This setup is useful for applications such as analog signal control, sensor calibration, and user input interfaces.
+
