@@ -124,7 +124,8 @@ This **MOSFET driver module** is designed for **high-power switching application
 The **relay module** acts as an **electrical switch**, enabling **low-power microcontroller signals** to control **high-power loads**.  
 
 
-![Antu] (https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/2c113b5bf998a07804dd37c7147d5f3d46d2c142/Photos/Relay.webp)
+![Antu](https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/0e9c00de53b215e1765fe919d105fd0743c52c6a/Photos/Relay.png)
+
 
 *Figure 3: Realy Module*
 
