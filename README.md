@@ -332,6 +332,22 @@ void delayCount(void) {
 
 void initEPWM1(void) {
     /* PWM Initialization and Configuration */
+    EPwm1Regs.TBPRD = 4000;       /* Set timer period 801 TBCLKs */
+    EPwm1Regs.TBPHS.bit.TBPHS = 0x0000;        /* Phase is 0 */
+    EPwm1Regs.TBCTR = 0x0000;
+
+    /* Set Compare Values */
+    EPwm1Regs.CMPA.bit.CMPA = Adc_Result_1;    /* Set compare A value */
+
+    /* Setup Counter Mode */
+    EPwm1Regs.TBCTL.bit.CTRMODE = TB_COUNT_UPDOWN; /* Count up and down */
+    EPwm1Regs.TBCTL.bit.PHSEN = TB_DISABLE;        /* Disable phase loading */
+    EPwm1Regs.TBCTL.bit.HSPCLKDIV = TB_DIV1;       /* Clock ratio to SYSCLKOUT */
+    EPwm1Regs.TBCTL.bit.CLKDIV = TB_DIV1;
+
+    /* Configure Action Qualifier */
+    EPwm1Regs.AQCTLA.bit.CAU = AQ_SET;     /* Set PWM1A on event A, up count */
+    EPwm1Regs.AQCTLA.bit.CAD = AQ_CLEAR;   /* Clear PWM1A on event A, down count */
 }
 
 void ConfigADC(void) {
