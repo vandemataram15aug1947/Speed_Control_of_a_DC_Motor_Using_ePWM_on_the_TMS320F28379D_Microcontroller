@@ -226,7 +226,7 @@ Below is the main loop implementation for Speed Control of a DC Motor:
 #include "device.h"
 
 /* ----------------------- Macro Definitions ----------------------- */
-#define EX_ADC_RESOLUTION 12  // ADC Resolution (12-bit)
+#define EX_ADC_RESOLUTION 12  /* ADC Resolution (12-bit) */
 
 /* ----------------------- Function Prototypes ----------------------- */
 void gpio_init(void);
