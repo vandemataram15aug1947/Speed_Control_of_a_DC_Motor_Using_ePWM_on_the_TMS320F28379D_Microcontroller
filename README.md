@@ -100,7 +100,7 @@ This **10K Ohm potentiometer** is a crucial component in **PWM-based motor speed
 This **MOSFET driver module** is designed for **high-power switching applications**. It enables efficient **PWM control of motors, light bulbs, LEDs, solenoid valves, and more**.
 
 <p align="center">
-  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/Connection%20Diagram%20of%20Motor%20Drive.jpg" width="500">
+  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/Connection%20Diagram%20of%20Motor%20Drive.jpg" width="400">
 </p>  
 
 <p align="center"><b>Figure 2:</b> Connection Diagram of Motor Drive</p> 
@@ -124,7 +124,7 @@ This **MOSFET driver module** is designed for **high-power switching application
 The **relay module** acts as an **electrical switch**, enabling **low-power microcontroller signals** to control **high-power loads**.  
 
 <p align="center">
-  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/0e9c00de53b215e1765fe919d105fd0743c52c6a/Photos/Relay.png" width="500">
+  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/0e9c00de53b215e1765fe919d105fd0743c52c6a/Photos/Relay.png" width="400">
 </p>  
 
 <p align="center"><b>Figure 3:</b>  Realy Modul</p> 
@@ -151,7 +151,7 @@ The **relay module** acts as an **electrical switch**, enabling **low-power micr
 This **RGB LED module** allows for **color mixing** using **Pulse Width Modulation (PWM)**.  
 
 <p align="center">
-  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/LED.jpg" width="500">
+  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/LED.jpg" width="400">
 </p>  
 
 <p align="center"><b>Figure 4:</b>  LED Module</p> 
@@ -173,7 +173,7 @@ This **RGB LED module** allows for **color mixing** using **Pulse Width Modulati
 This **active buzzer module** generates an audible alarm or tone when activated.  
 
 <p align="center">
-  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/9b9796890e468fe01caf99e192418d73d101803b/Photos/Buzzer.png" width="500">
+  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/9b9796890e468fe01caf99e192418d73d101803b/Photos/Buzzer.png" width="400">
 </p>  
 
 <p align="center"><b>Figure 5:</b>  Buzzer Module</p> 
