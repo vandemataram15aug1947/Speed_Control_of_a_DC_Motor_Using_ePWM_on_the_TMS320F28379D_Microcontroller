@@ -208,11 +208,26 @@ This **active buzzer module** generates an audible alarm or tone when activated.
 - The **PWM signal is generated using the ePWM module** of the **TMS320F28379D**.  
 - The **buzzer and LED module** provide **status indication** during operation.  
 
-#### **Key Software Features**  
-- **ADC Sampling:** Reads potentiometer input voltage.  
-- **PWM Generation:** Adjusts duty cycle based on ADC input.  
-- **GPIO Control:** Handles LED, buzzer, and relay operations.  
-- **Interrupt Handling:** Ensures efficient processing of signals.  
+# **Code Implementation**
+
+### **Main Loop for SOC and SOH*
+Below is the main loop implementation for  for SOC and SOH:
+
+```c
+// For IOT
+#include "ThingSpeak.h"
+#include <ESP8266WiFi.h>
+
+// For Temprature Sensor
+#include <OneWire.h>
+#include <DallasTemperature.h>
+
+
+// Board pin definition
+const int analog_sensor = A0;
+
+}
+```
 
 ---
 
