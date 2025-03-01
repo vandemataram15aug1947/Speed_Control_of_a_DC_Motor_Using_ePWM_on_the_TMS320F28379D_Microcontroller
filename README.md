@@ -50,11 +50,11 @@ A **potentiometer** is a **three-terminal electrical component** that can change
 
 Below is the circuit diagram illustrating how the **potentiometer is connected to the TMS320F28379D** for motor speed control:  
 
-![Antu](https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/2b16567f4e88e164c2485ad860fb8435e7360a20/Photos/F28379D%20LaunchPad%20with%20Potentiometer.png)
+<p align="center">
+  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/2b16567f4e88e164c2485ad860fb8435e7360a20/Photos/F28379D%20LaunchPad%20with%20Potentiometer.png" width="200">
+</p>  
 
-*Figure 1: F28379D LaunchPad with Potentiometer*
-
-
+<p align="center"><b>Figure 1:</b> F28379D LaunchPad with Potentiometer</p>  
 
 This setup ensures smooth and precise **DC motor speed control**, making it a fundamental part of this project. 🚀  
 
