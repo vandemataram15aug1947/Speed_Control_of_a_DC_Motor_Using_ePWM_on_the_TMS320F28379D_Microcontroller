@@ -100,7 +100,7 @@ This **10K Ohm potentiometer** is a crucial component in **PWM-based motor speed
 This **MOSFET driver module** is designed for **high-power switching applications**. It enables efficient **PWM control of motors, light bulbs, LEDs, solenoid valves, and more**.
 
 <p align="center">
-  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/Connection%20Diagram%20of%20Motor%20Drive.jpg" width="400">
+  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/Connection%20Diagram%20of%20Motor%20Drive.jpg" width="300">
 </p>  
 
 <p align="center"><b>Figure 2:</b> Connection Diagram of Motor Drive</p> 
@@ -124,7 +124,7 @@ This **MOSFET driver module** is designed for **high-power switching application
 The **relay module** acts as an **electrical switch**, enabling **low-power microcontroller signals** to control **high-power loads**.  
 
 <p align="center">
-  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/0e9c00de53b215e1765fe919d105fd0743c52c6a/Photos/Relay.png" width="400">
+  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/0e9c00de53b215e1765fe919d105fd0743c52c6a/Photos/Relay.png" width="300">
 </p>  
 
 <p align="center"><b>Figure 3:</b>  Realy Modul</p> 
@@ -151,7 +151,7 @@ The **relay module** acts as an **electrical switch**, enabling **low-power micr
 This **RGB LED module** allows for **color mixing** using **Pulse Width Modulation (PWM)**.  
 
 <p align="center">
-  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/LED.jpg" width="400">
+  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/LED.jpg" width="300">
 </p>  
 
 <p align="center"><b>Figure 4:</b>  LED Module</p> 
@@ -173,7 +173,7 @@ This **RGB LED module** allows for **color mixing** using **Pulse Width Modulati
 This **active buzzer module** generates an audible alarm or tone when activated.  
 
 <p align="center">
-  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/9b9796890e468fe01caf99e192418d73d101803b/Photos/Buzzer.png" width="400">
+  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/9b9796890e468fe01caf99e192418d73d101803b/Photos/Buzzer.png" width="300">
 </p>  
 
 <p align="center"><b>Figure 5:</b>  Buzzer Module</p> 
@@ -210,23 +210,138 @@ This **active buzzer module** generates an audible alarm or tone when activated.
 
 # **Code Implementation**
 
-### **Main Loop for SOC and SOH*
-Below is the main loop implementation for  for SOC and SOH:
+Below is the main loop implementation for Speed Control of a DC Motor:
 
 ```c
-// For IOT
-#include "ThingSpeak.h"
-#include <ESP8266WiFi.h>
+/*
+ * Speed Control of a DC Motor Using ePWM on the TMS320F28379D Microcontroller
+ *
+ * Created on: Mar 1, 2025
+ * Author: Vande
+ */
 
-// For Temprature Sensor
-#include <OneWire.h>
-#include <DallasTemperature.h>
+#include "F2837xD_device.h"
+#include "F28x_Project.h"
+#include "driverlib.h"
+#include "device.h"
 
+/* ----------------------- Macro Definitions ----------------------- */
+#define EX_ADC_RESOLUTION 12  // ADC Resolution (12-bit)
 
-// Board pin definition
-const int analog_sensor = A0;
+/* ----------------------- Function Prototypes ----------------------- */
+void gpio_init(void);
+void PinMux_init(void);
+void initEPWM1(void);
 
+void toggleLED(void);
+void toggleBuzzer(void);
+void toggleRelay(void);
+
+void setLED(bool set);
+void setBuzzer(bool set);
+void setRelay(bool set);
+
+void delayCount(void);
+void ConfigADC(void);
+void initADC_SOC(void);
+
+/* ----------------------- Global Variables ----------------------- */
+uint16_t Adc_Result_1, prev_Adc_Result_1, Adc_Result_2;
+uint16_t delayCounter_ms, delayCounter_s;
+int count;
+
+/* ----------------------- Main Function ----------------------- */
+void main(void) {
+    /* Initialize Device and Peripherals */
+    Device_init();
+    Device_initGPIO();
+    PinMux_init();
+    
+    Interrupt_initModule();
+    Interrupt_initVectorTable();
+    
+    IER = 0x0000;
+    IFR = 0x0000;
+    
+    SysCtl_disablePeripheral(SYSCTL_PERIPH_CLK_TBCLKSYNC);
+    SysCtl_enablePeripheral(SYSCTL_PERIPH_CLK_TBCLKSYNC);
+    
+    ConfigADC();
+    initADC_SOC();
+    
+    /* Initialize Variables */
+    Adc_Result_1 = 0;
+    prev_Adc_Result_1 = 0;
+    delayCounter_ms = 0;
+    delayCounter_s = 0;
+    count = 0;
+    
+    EINT;
+    ERTM;
+    
+    while (1) {
+        /* ADC Conversion and Result Processing */
+        // Force ADC Conversion
+        // Wait for completion
+        // Store ADC result
+        
+        /* Motor Control Logic */
+        // Implement PWM control based on ADC result
+        
+        /* Peripheral Control Logic */
+        // LED, Buzzer, and Relay Control
+        
+        /* Timing and Delay Handling */
+        delayCount();
+    }
 }
+
+/* ----------------------- Function Definitions ----------------------- */
+
+void PinMux_init(void) {
+    /* GPIO Pin Initialization for PWM, LED, Buzzer, and Relay */
+}
+
+void toggleLED(void) {
+    /* Toggle LED State */
+}
+
+void toggleBuzzer(void) {
+    /* Toggle Buzzer State */
+}
+
+void toggleRelay(void) {
+    /* Toggle Relay State */
+}
+
+void setLED(bool set) {
+    /* Set LED State */
+}
+
+void setBuzzer(bool set) {
+    /* Set Buzzer State */
+}
+
+void setRelay(bool set) {
+    /* Set Relay State */
+}
+
+void delayCount(void) {
+    /* Delay Function Implementation */
+}
+
+void initEPWM1(void) {
+    /* PWM Initialization and Configuration */
+}
+
+void ConfigADC(void) {
+    /* ADC Configuration Structure */
+}
+
+void initADC_SOC(void) {
+    /* ADC Start-of-Conversion Setup */
+}
+
 ```
 
 ---
