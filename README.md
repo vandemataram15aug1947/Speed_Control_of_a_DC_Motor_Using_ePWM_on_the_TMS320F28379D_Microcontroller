@@ -230,7 +230,7 @@ The implementation of DC motor control using the **TMS320F28379D** microcontroll
   <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/Motor%20is%20Rotating%20at%20normal%20Speed%20Only%20Relay%20Module%20and%20LED%20On.jpg" width="500">
 </p>  
 
-<p align="center"><b>Figure 6:</b>  Motor is Rotating at Normal Speed</p> 
+<p align="center"><b>Figure 6:</b>  Motor is Rotating at Normal Speed, Only the **relay module LED is ON**</p> 
 
 #### **Working Principle**  
 2. **LED and Buzzer Indication**
@@ -241,11 +241,7 @@ The implementation of DC motor control using the **TMS320F28379D** microcontroll
   <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/Motor%20is%20Rotating%20at%20Full%20Speed%20LED%20and%20Buzzer%20On.jpg" width="500">
 </p>  
 
-<p align="center"><b>Figure 7:</b>  Motor is Rotating at Full Speed</p> 
-
-#### **Working Principle**  
-- **Figure 1:** When the motor is running at a **normal speed**, only the **relay module LED is ON**.
-- **Figure 2:** When the motor is running at **full speed**, both the **LED and buzzer are ON**.
+<p align="center"><b>Figure 7:</b>  Motor is Rotating at Full Speed, Both the **LED and buzzer are ON**</p> 
 
 ---
 
