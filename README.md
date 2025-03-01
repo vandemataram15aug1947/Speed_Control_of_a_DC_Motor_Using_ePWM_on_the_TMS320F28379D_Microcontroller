@@ -376,7 +376,7 @@ The implementation of DC motor control using the **TMS320F28379D** microcontroll
   <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/Motor%20is%20Rotating%20at%20normal%20Speed%20Only%20Relay%20Module%20and%20LED%20On.jpg" width="500">
 </p>  
 
-<p align="center"><b>Figure 6:</b>  Motor is Rotating at Normal Speed, Only the **relay module LED is ON**</p> 
+<p align="center"><b>Figure 6:</b>  Motor is Rotating at Normal Speed, Only the **Relay Module LED is ON**</p> 
 
 #### **Working Principle**  
 2. **LED and Buzzer Indication**
