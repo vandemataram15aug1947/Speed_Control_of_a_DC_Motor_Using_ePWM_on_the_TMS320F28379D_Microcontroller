@@ -332,7 +332,7 @@ void delayCount(void) {
 
 void initEPWM1(void) {
     /* PWM Initialization and Configuration */
-    EPwm1Regs.TBPRD = 4000;       /* Set timer period 801 TBCLKs */
+    EPwm1Regs.TBPRD = 1250;       /* Set timer period 801 TBCLKs */
     EPwm1Regs.TBPHS.bit.TBPHS = 0x0000;        /* Phase is 0 */
     EPwm1Regs.TBCTR = 0x0000;
 
