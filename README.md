@@ -51,7 +51,7 @@ A **potentiometer** is a **three-terminal electrical component** that can change
 Below is the circuit diagram illustrating how the **potentiometer is connected to the TMS320F28379D** for motor speed control:  
 
 <p align="center">
-  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/2b16567f4e88e164c2485ad860fb8435e7360a20/Photos/F28379D%20LaunchPad%20with%20Potentiometer.png" width="200">
+  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/2b16567f4e88e164c2485ad860fb8435e7360a20/Photos/F28379D%20LaunchPad%20with%20Potentiometer.png" width="500">
 </p>  
 
 <p align="center"><b>Figure 1:</b> F28379D LaunchPad with Potentiometer</p>  
@@ -97,12 +97,13 @@ This **10K Ohm potentiometer** is a crucial component in **PWM-based motor speed
 ---
 
 ### **2. 5-36V Switch Drive High-Power MOSFET Trigger Module**  
-This **MOSFET driver module** is designed for **high-power switching applications**. It enables efficient **PWM control of motors, light bulbs, LEDs, solenoid valves, and more**.  
+This **MOSFET driver module** is designed for **high-power switching applications**. It enables efficient **PWM control of motors, light bulbs, LEDs, solenoid valves, and more**.
 
+<p align="center">
+  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/Connection%20Diagram%20of%20Motor%20Drive.jpg" width="500">
+</p>  
 
-![Antu](https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/Connection%20Diagram%20of%20Motor%20Drive.jpg)
-
-*Figure 2: Connection Diagram of Motor Drive*
+<p align="center"><b>Figure 2:</b> Connection Diagram of Motor Drive</p> 
 
 #### **Working Principle**  
 - The module features a **dual-MOS parallel active output**, reducing internal resistance and increasing current capacity.  
@@ -122,11 +123,11 @@ This **MOSFET driver module** is designed for **high-power switching application
 ### **3. 5V 1-Channel Relay Module (Without Light Coupling)**  
 The **relay module** acts as an **electrical switch**, enabling **low-power microcontroller signals** to control **high-power loads**.  
 
+<p align="center">
+  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/0e9c00de53b215e1765fe919d105fd0743c52c6a/Photos/Relay.png" width="500">
+</p>  
 
-![Antu](https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/0e9c00de53b215e1765fe919d105fd0743c52c6a/Photos/Relay.png)
-
-
-*Figure 3: Realy Module*
+<p align="center"><b>Figure 3:</b>  Realy Modul</p> 
 
 #### **Working Principle**  
 - When triggered, the relay **closes or opens** its circuit, allowing for control of **AC or DC loads**.  
@@ -149,9 +150,11 @@ The **relay module** acts as an **electrical switch**, enabling **low-power micr
 ### **4. DIP 3-Color LED Module**  
 This **RGB LED module** allows for **color mixing** using **Pulse Width Modulation (PWM)**.  
 
-![Antu](https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/LED.jpg)
+<p align="center">
+  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/LED.jpg" width="500">
+</p>  
 
-*Figure 4: LED Module*
+<p align="center"><b>Figure 4:</b>  LED Module</p> 
 
 #### **Working Principle**  
 - The module includes a **5mm RGB LED** and **three 150Ω resistors** to prevent burnout.  
@@ -169,9 +172,11 @@ This **RGB LED module** allows for **color mixing** using **Pulse Width Modulati
 ### **5. 5V Active Alarm Buzzer Module**  
 This **active buzzer module** generates an audible alarm or tone when activated.  
 
-![Antu](https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/9b9796890e468fe01caf99e192418d73d101803b/Photos/Buzzer.png)
+<p align="center">
+  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/9b9796890e468fe01caf99e192418d73d101803b/Photos/Buzzer.png" width="500">
+</p>  
 
-*Figure 5: Buzzer Module*
+<p align="center"><b>Figure 5:</b>  Buzzer Module</p> 
 
 #### **Working Principle**  
 - Unlike a **passive buzzer**, an **active buzzer** emits sound **as soon as it receives power**.  
@@ -221,18 +226,22 @@ The implementation of DC motor control using the **TMS320F28379D** microcontroll
    - When the **ADC value is at its minimum**, the motor **runs at full speed**.
    - By adjusting the potentiometer, the **PWM duty cycle** changes, allowing fine-tuned control over the motor speed.
 
-![Antu](https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/Motor%20is%20Rotating%20at%20normal%20Speed%20Only%20Relay%20Module%20and%20LED%20On.jpg)
+<p align="center">
+  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/Motor%20is%20Rotating%20at%20normal%20Speed%20Only%20Relay%20Module%20and%20LED%20On.jpg" width="500">
+</p>  
 
-*Figure 6: Motor is Rotating at Normal Speed*
+<p align="center"><b>Figure 6:</b>  Motor is Rotating at Normal Speed</p> 
 
 #### **Working Principle**  
 2. **LED and Buzzer Indication**
    - During **normal operation**, only the **relay module LED** remains **on**.
    - If the motor speed exceeds a predefined limit, **both the LED and buzzer turn on** as a warning indicator.
 
-![Antu](https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/Motor%20is%20Rotating%20at%20Full%20Speed%20LED%20and%20Buzzer%20On.jpg)
+<p align="center">
+  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/05cd3fc4fea9986c3477eadd6b7c7f1b312ca83d/Photos/Motor%20is%20Rotating%20at%20Full%20Speed%20LED%20and%20Buzzer%20On.jpg" width="500">
+</p>  
 
-*Figure 7: Motor is Rotating at Full Speed*
+<p align="center"><b>Figure 7:</b>  Motor is Rotating at Full Speed</p> 
 
 #### **Working Principle**  
 - **Figure 1:** When the motor is running at a **normal speed**, only the **relay module LED is ON**.
