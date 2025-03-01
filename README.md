@@ -173,7 +173,7 @@ This **RGB LED module** allows for **color mixing** using **Pulse Width Modulati
 This **active buzzer module** generates an audible alarm or tone when activated.  
 
 <p align="center">
-  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/9b9796890e468fe01caf99e192418d73d101803b/Photos/Buzzer.png" width="300">
+  <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/9b9796890e468fe01caf99e192418d73d101803b/Photos/Buzzer.png" width="200">
 </p>  
 
 <p align="center"><b>Figure 5:</b>  Buzzer Module</p> 
@@ -216,7 +216,7 @@ Below is the main loop implementation for Speed Control of a DC Motor:
 /*
  * Speed Control of a DC Motor Using ePWM on the TMS320F28379D Microcontroller
  *
- * Created on: Mar 1, 2025
+ * Created on: Dec 5, 2023
  * Author: Vande
  */
 
