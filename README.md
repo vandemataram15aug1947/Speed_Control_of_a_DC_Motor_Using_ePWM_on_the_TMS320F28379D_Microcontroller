@@ -127,7 +127,7 @@ The **relay module** acts as an **electrical switch**, enabling **low-power micr
   <img src="https://github.com/vandemataram15aug1947/Speed_Control_of_a_DC_Motor_Using_ePWM_on_the_TMS320F28379D_Microcontroller/blob/0e9c00de53b215e1765fe919d105fd0743c52c6a/Photos/Relay.png" width="300">
 </p>  
 
-<p align="center"><b>Figure 3:</b>  Realy Modul</p> 
+<p align="center"><b>Figure 3:</b>  Realy Module</p> 
 
 #### **Working Principle**  
 - When triggered, the relay **closes or opens** its circuit, allowing for control of **AC or DC loads**.  
