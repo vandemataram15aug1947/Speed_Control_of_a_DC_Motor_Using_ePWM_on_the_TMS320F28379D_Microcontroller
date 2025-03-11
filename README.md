@@ -409,7 +409,7 @@ The **PWM-based DC motor control system** implemented in this project provides a
 In conclusion, this project successfully demonstrates the feasibility of **PWM-based DC motor control** and serves as a stepping stone for **more advanced motor control applications**. Future improvements can focus on **refining control strategies, increasing system adaptability, and integrating additional safety features** to enhance performance and reliability.
 
 📌 **Author**: [Vande]  
-📌 **License**: GPL  
+📌 **License**: GPL-3.0 lisence  
 📌 **Contributions**: Open to suggestions and improvements! Feel free to submit PRs or open issues. 🚀
 
 
